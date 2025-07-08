@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Globe, Heart, TrendingUp, Users, Shield, Award } from 'lucide-react';
+import  { useState } from 'react';
+import { Globe, TrendingUp, Users, Shield, Award } from 'lucide-react';
 import Globe3D from './components/Globe3D';
 import DonationButton from './components/DonationButton';
 import CounterWithConfetti from './components/CounterWithConfetti';
@@ -9,7 +9,7 @@ import ImpactStats from './components/ImpactStats';
 function App() {
   const [totalDonations, setTotalDonations] = useState(87500);
   const [targetAmount] = useState(100000);
-  const [showCelebration, setShowCelebration] = useState(false);
+  const [, setShowCelebration] = useState(false);
 
   const donationLocations = [
     { lat: 40.7128, lng: -74.0060, amount: 5000, project: "Education NYC" },
